@@ -1,0 +1,35 @@
+{
+  "name": "rs-upload-ai-backend",
+  "version": "1.0.0",
+  "description": "API para comunicação com sistemas de IA e processamento de audios em vídeos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorptsantos/rs-upload-ai-api.git"
+  },
+  "keywords": [
+    "AI",
+    "prompt-generator",
+    "GPT-powered"
+  ],
+  "author": "Igor Patrício dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorptsantos/rs-upload-ai-api/issues"
+  },
+  "homepage": "https://github.com/igorptsantos/rs-upload-ai-api#readme",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "prisma": "^5.3.0",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.3.0",
+    "fastify": "^4.23.1"
+  }
+}
