@@ -1,2 +1,27 @@
 # @name
-GET "http://localhost:3333"
+GET http://localhost:3333/prompts
+
+###
+# @name list-prompts
+GET http://localhost:3333/prompts
+
+###
+# @name upload-video
+POST http://localhost:3333/videos
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="example.mp3"
+Content-Type: audio/mpeg
+
+< .\example_audio.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+# @name create-transcription
+POST http://localhost:3333/videos/c8379f58-6f29-4e35-8b72-746a2bf17731/transcription
+Content-Type: application/json
+
+{
+  "prompt": "clean architecture"
+}

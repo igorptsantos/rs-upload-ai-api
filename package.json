@@ -16,6 +16,9 @@
     "prompt-generator",
     "GPT-powered"
   ],
+  "prisma": {
+    "seed": "npx/primsa/seed.ts"
+  },
   "author": "Igor Patrício dos Santos",
   "license": "ISC",
   "bugs": {
@@ -24,12 +27,18 @@
   "homepage": "https://github.com/igorptsantos/rs-upload-ai-api#readme",
   "devDependencies": {
     "@types/node": "^20.6.0",
+    "dotenv": "^16.3.1",
     "prisma": "^5.3.0",
     "tsx": "^3.12.10",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/multipart": "^7.7.3",
     "@prisma/client": "^5.3.0",
-    "fastify": "^4.23.1"
+    "ai": "^2.2.12",
+    "fastify": "^4.23.1",
+    "openai": "^4.7.0",
+    "zod": "^3.22.2"
   }
 }
